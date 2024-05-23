@@ -8,7 +8,7 @@
 					Brenda Vergara Martínez
 					Kaleb Yael De La Rosa Gutiérrez
 					Osmar Alejandro Garcia Jiménez
-	Descripcion:Este archivo decide si la instruccion es de tipo inmediato
+	Descripcion:Este archivo extiende el signo de mi inmediato en mi funcion obtenida
 						
 */
 

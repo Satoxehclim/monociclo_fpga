@@ -8,7 +8,8 @@
 					Brenda Vergara Martínez
 					Kaleb Yael De La Rosa Gutiérrez
 					Osmar Alejandro Garcia Jiménez
-	Descripcion:Esta estapa decodifica el opcode pasa ver si se debe escribir en el banco de registros
+	Descripcion: Esta estapa decodifica el opcode de forma que controla las etapas y cuando
+					 tienen que escribir o leer los registros implementados
 						
 */
 module decodificador( //etapa de control 

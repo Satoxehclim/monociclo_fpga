@@ -1,5 +1,17 @@
 /*
-ALU 
+	Grupo:5CV3
+	Proyecto:monociclo_FPGA
+	Archivo:extensiondesigno.v
+	Equipo:Equipo 3
+	Integrantes:Abraham Roman Ramírez
+					Andrade Jiménez Jonathan 
+					Brenda Vergara Martínez
+					Kaleb Yael De La Rosa Gutiérrez
+					Osmar Alejandro Garcia Jiménez
+	Descripcion: Este archivo hace una instancia de la ALU de 10 operraciones a 32 bits
+					 e instancia el modulo shift comparando tambien el bit 3 para saber si es un shift
+					 o es la salida de la ALU
+						
 */
 module ALUNBits #(
 	parameter 			N = 32
@@ -12,7 +24,7 @@ module ALUNBits #(
 	input 						less_i,
 	input 						lessunsigned_i,
 	input 			[3:0] 	operacion_i,
-	output		   [N-1:0] 	salida_o,
+	output		   reg[N-1:0] 	salida_o,
 	output						c_o,
 	output						set_o,
 	output						setunsigned_o
@@ -20,7 +32,7 @@ module ALUNBits #(
 );
 	wire 				[N:0] 	carries_w;
 	wire				[31:0] 	salida_shift;
-	wire				[N-1:0] 	salida_alu;//implementar
+	wire				[N-1:0] 	salida_alu;
 	
 	
 	assign 				carries_w[0] = c_i;
@@ -42,7 +54,7 @@ module ALUNBits #(
 					.less_i			(set_o),
 					.lessunsigned_i(setunsigned_o),
 					.operacion_i	(operacion_i[2:0]),
-					.salida_o		(salida_o[i]),
+					.salida_o		(salida_alu[i]),
 					.c_o				(carries_w[i+1])
 					);
 				N-1:
@@ -54,7 +66,7 @@ module ALUNBits #(
 					.less_i			(1'b0),
 					.lessunsigned_i(1'b0),
 					.operacion_i	(operacion_i[2:0]),
-					.salida_o		(salida_o[i]),
+					.salida_o		(salida_alu[i]),
 					.c_o				(carries_w[i+1]),
 					.set_o			(set_o),
 					.setunsigned_o(setunsigned_o)
@@ -68,7 +80,7 @@ module ALUNBits #(
 					.less_i			(1'b0),
 					.lessunsigned_i(1'b0),
 					.operacion_i	(operacion_i[2:0]),
-					.salida_o		(salida_o[i]),
+					.salida_o		(salida_alu[i]),
 					.c_o				(carries_w[i+1])
 					);
 				endcase
@@ -79,27 +91,27 @@ module ALUNBits #(
 	
 	assign 				c_o = carries_w[N];
 	
-	///shihft
-//	// Instancia del módulo shift
-//	shift #(
-//		.N				(32)
-//		) 
-//		shift_u
-//		(
-//		 .a_i(a_i),
-//		 .b_i(b_i),
-//		 .operacion_i(operacion_i[1:0]),
-//		 .salida_o(salida_shift)
-//	);
-//	
-//	// Selección entre operaciones de desplazamiento y ALU normal
-//    always @(*) begin
-//		 if (operacion_i[3] == 1'b1) begin
-//			  salida_o  <= salida_shift;  // Resultado del módulo shift
-//		 end 
-//		 else begin
-//           salida_o  <= salida_alu;  // Resultado de la alu
-//		 end
-//    end
+
+	// Instancia del módulo shift
+	shift #(
+		.N				(32)
+		) 
+		shift_u
+		(
+		 .a_i(a_i),
+		 .b_i(b_i),
+		 .operacion_i(operacion_i[1:0]),
+		 .salida_o(salida_shift)
+	);
+	
+	// Selección entre operaciones de desplazamiento y ALU normal
+    always @(*) begin
+		 if (operacion_i[3] == 1'b1) begin
+			  salida_o  <= salida_shift;  // Resultado del módulo shift
+		 end 
+		 else begin
+           salida_o  <= salida_alu;  // Resultado de la alu
+		 end
+    end
 	
 endmodule

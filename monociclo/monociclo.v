@@ -8,8 +8,7 @@
 					Brenda Vergara Martínez
 					Kaleb Yael De La Rosa Gutiérrez
 					Osmar Alejandro Garcia Jiménez
-	Descripcion:Este es el archivo que hace una suma de 4 cada que
-					se obtiene un flanco positivo en el reloj 
+	Descripcion:Este archivo es la instancia de un procesador monociclo
 						
 */
 
@@ -35,6 +34,7 @@ module monociclo(
 	 wire [31:0] mem_dato_o;
 	 wire [31:0] wb_resultado_o;
 	 wire 		 id_memtoreg_o;
+	 wire [3:0]  aluc_operacion_o;
 	 
 	 
     //Seccion de asignacion de señales
@@ -110,6 +110,13 @@ module monociclo(
 		.inmediato_o (es_dato_o)
 	);
 	
+	ALUcontrol ALUcontrol_u(
+		.opcode_i			(if_inst_o[6:0]),
+		.func3_i				(if_inst_o[14:12]),
+		.func7_i				(if_inst_o[30]),
+		.ALUoperation_o	(aluc_operacion_o)
+	);
+	
 	///multiplexor para el segundo operando de la ALU 
 	assign muxalu_dato_o  = (id_alusrc_o) ? es_dato_o : rf_dators2_o;
 	
@@ -125,7 +132,7 @@ module monociclo(
 		.invert_i			(if_inst_o[30]),
 		.less_i				(),
 		.lessunsigned_i	(),
-		.operacion_i		({if_inst_o[30],if_inst_o[14:12]}),//if_inst_o func3
+		.operacion_i		(aluc_operacion_o),
 		.salida_o			(ex_resultado_o),//salida de execute
 		.c_o					(c_o),
 		.set_o				(),

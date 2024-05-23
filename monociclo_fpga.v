@@ -8,9 +8,8 @@
 					Brenda Vergara Martínez
 					Kaleb Yael De La Rosa Gutiérrez
 					Osmar Alejandro Garcia Jiménez
-	Descripcion:Este es el archivo que hace una suma de 4 cada que
-					se obtiene un flanco positivo en el reloj 
-						
+	Descripcion:Este es el archivo que hace una implementacion para darle datos a mis salidas
+					a los display de 7 segmentos
 */
 
 module monociclo_fpga (

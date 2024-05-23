@@ -1,17 +1,3 @@
-/*
-	Grupo:5CV3
-	Proyecto:    monociclo_FPGA
-	Archivo:extensiondesigno.v
-	Equipo:Equipo 3
-	Integrantes:Abraham Roman Ramírez
-					Andrade Jiménez Jonathan 
-					Brenda Vergara Martínez
-					Kaleb Yael De La Rosa Gutiérrez
-					Osmar Alejandro Garcia Jiménez
-	Descripcion: Este archivo es el desarrollo de una ALU de 7 operaciones instanciando 
-	un sumador para la operacion suma y resta
-						
-*/
 module ALU (
 	input 	a_i, 						//Entrada A
 	input 	b_i, 						//Entrada B
@@ -60,14 +46,14 @@ module ALU (
 	begin 
 		 case(operacion_i)
 
-			3'b000: 	salida_o = salidasum_w;		//Suma 	(0)
-			3'b001: 	salida_o = ab1_w;				//AND		(1)
-			3'b010: 	salida_o = ab2_w;    		//OR 	   (2)
-			3'b011:	salida_o = ab3_w;				//XOR		(3)
-			3'b100:	salida_o = salidasum_w; 	//Resta	(4)
-			3'b101:	salida_o = less_i;			//SLT 	(5)
-			3'b110:	salida_o = lessunsigned_i;	//SLTU	(6)
-			3'b111:  salida_o = 1'b0; 				//		 	(7)
+			3'b000: 	salida_o = salidasum_w;	//Suma 	(0)
+			3'b001: 	salida_o = 1'b0;			// 		(1)
+			3'b010: 	salida_o = less_i;	   //SLT 	(2)
+			3'b011:	salida_o = 1'b0;			// 		(3)
+			3'b100:	salida_o = 1'b0;			// 		(4)
+			3'b101:	salida_o = ab3_w;			//XOR 	(5)
+			3'b110:	salida_o = ab2_w;			//OR 		(6)
+			3'b111:  salida_o = ab1_w; 		//AND 	(7)
 			default: salida_o = 1'b0;
 		 endcase
 	end 

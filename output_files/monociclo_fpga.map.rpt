@@ -1,5 +1,5 @@
 Analysis & Synthesis report for monociclo_fpga
-Fri May 17 06:49:22 2024
+Thu May 23 13:37:44 2024
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,46 +14,48 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: monociclo:PC|extensiondesigno:extend_u3
- 13. Parameter Settings for User Entity Instance: monociclo:PC|ALUNBits:comb_169
- 14. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALUBitN:alubucle[31].ALUBitN_1"
- 15. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[30].ALUBitX"
- 16. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[29].ALUBitX"
- 17. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[28].ALUBitX"
- 18. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[27].ALUBitX"
- 19. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[26].ALUBitX"
- 20. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[25].ALUBitX"
- 21. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[24].ALUBitX"
- 22. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[23].ALUBitX"
- 23. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[22].ALUBitX"
- 24. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[21].ALUBitX"
- 25. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[20].ALUBitX"
- 26. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[19].ALUBitX"
- 27. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[18].ALUBitX"
- 28. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[17].ALUBitX"
- 29. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[16].ALUBitX"
- 30. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[15].ALUBitX"
- 31. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[14].ALUBitX"
- 32. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[13].ALUBitX"
- 33. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[12].ALUBitX"
- 34. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[11].ALUBitX"
- 35. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[10].ALUBitX"
- 36. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[9].ALUBitX"
- 37. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[8].ALUBitX"
- 38. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[7].ALUBitX"
- 39. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[6].ALUBitX"
- 40. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[5].ALUBitX"
- 41. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[4].ALUBitX"
- 42. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[3].ALUBitX"
- 43. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[2].ALUBitX"
- 44. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[1].ALUBitX"
- 45. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169"
- 46. Post-Synthesis Netlist Statistics for Top Partition
- 47. Elapsed Time Per Partition
- 48. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: monociclo:PC|extensiondesigno:extend_u3
+ 14. Parameter Settings for User Entity Instance: monociclo:PC|ALUNBits:comb_169
+ 15. Parameter Settings for User Entity Instance: monociclo:PC|ALUNBits:comb_169|shift:shift_u
+ 16. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALUBitN:alubucle[31].ALUBitN_1"
+ 17. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[30].ALUBitX"
+ 18. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[29].ALUBitX"
+ 19. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[28].ALUBitX"
+ 20. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[27].ALUBitX"
+ 21. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[26].ALUBitX"
+ 22. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[25].ALUBitX"
+ 23. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[24].ALUBitX"
+ 24. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[23].ALUBitX"
+ 25. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[22].ALUBitX"
+ 26. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[21].ALUBitX"
+ 27. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[20].ALUBitX"
+ 28. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[19].ALUBitX"
+ 29. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[18].ALUBitX"
+ 30. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[17].ALUBitX"
+ 31. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[16].ALUBitX"
+ 32. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[15].ALUBitX"
+ 33. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[14].ALUBitX"
+ 34. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[13].ALUBitX"
+ 35. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[12].ALUBitX"
+ 36. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[11].ALUBitX"
+ 37. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[10].ALUBitX"
+ 38. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[9].ALUBitX"
+ 39. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[8].ALUBitX"
+ 40. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[7].ALUBitX"
+ 41. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[6].ALUBitX"
+ 42. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[5].ALUBitX"
+ 43. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[4].ALUBitX"
+ 44. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[3].ALUBitX"
+ 45. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[2].ALUBitX"
+ 46. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[1].ALUBitX"
+ 47. Port Connectivity Checks: "monociclo:PC|ALUNBits:comb_169"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -79,15 +81,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 17 06:49:21 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 23 13:37:44 2024       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; monociclo_fpga                              ;
 ; Top-level Entity Name              ; monociclo_fpga                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 6,301                                       ;
-;     Total combinational functions  ; 3,293                                       ;
-;     Dedicated logic registers      ; 3,111                                       ;
-; Total registers                    ; 3111                                        ;
+; Total logic elements               ; 6,609                                       ;
+;     Total combinational functions  ; 3,697                                       ;
+;     Dedicated logic registers      ; 3,015                                       ;
+; Total registers                    ; 3015                                        ;
 ; Total pins                         ; 58                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -208,6 +210,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 ; decodificador/decodificador.v       ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/decodificador/decodificador.v       ;         ;
 ; extensiondesigno/extensiondesigno.v ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/extensiondesigno/extensiondesigno.v ;         ;
+; ALU/shift.v                         ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/shift.v                         ;         ;
 ; ALU/ALU.v                           ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALU.v                           ;         ;
 ; ALU/fulladder/fulladder.v           ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/fulladder/fulladder.v           ;         ;
 ; ALU/ALUNBits.v                      ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v                      ;         ;
@@ -220,6 +223,7 @@ refer to the applicable agreement for further details.
 ; icache/icache.v                     ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/icache/icache.v                     ;         ;
 ; regfile/regfile.v                   ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/regfile/regfile.v                   ;         ;
 ; dcache/dcache.v                     ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/dcache/dcache.v                     ;         ;
+; ALUcontrol/ALUcontrol.v             ; yes             ; User Verilog HDL File                 ; C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALUcontrol/ALUcontrol.v             ;         ;
 +-------------------------------------+-----------------+---------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -228,20 +232,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Estimated Total logic elements              ; 6,301                      ;
+; Estimated Total logic elements              ; 6,609                      ;
 ;                                             ;                            ;
-; Total combinational functions               ; 3293                       ;
+; Total combinational functions               ; 3697                       ;
 ; Logic element usage by number of LUT inputs ;                            ;
-;     -- 4 input functions                    ; 3115                       ;
-;     -- 3 input functions                    ; 132                        ;
-;     -- <=2 input functions                  ; 46                         ;
+;     -- 4 input functions                    ; 3193                       ;
+;     -- 3 input functions                    ; 448                        ;
+;     -- <=2 input functions                  ; 56                         ;
 ;                                             ;                            ;
 ; Logic elements by mode                      ;                            ;
-;     -- normal mode                          ; 3258                       ;
+;     -- normal mode                          ; 3662                       ;
 ;     -- arithmetic mode                      ; 35                         ;
 ;                                             ;                            ;
-; Total registers                             ; 3111                       ;
-;     -- Dedicated logic registers            ; 3111                       ;
+; Total registers                             ; 3015                       ;
+;     -- Dedicated logic registers            ; 3015                       ;
 ;     -- I/O registers                        ; 0                          ;
 ;                                             ;                            ;
 ; I/O pins                                    ; 58                         ;
@@ -249,9 +253,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                          ;
 ;                                             ;                            ;
 ; Maximum fan-out node                        ; divFreq:divisor|divF_clk_o ;
-; Maximum fan-out                             ; 3079                       ;
-; Total fan-out                               ; 22392                      ;
-; Average fan-out                             ; 3.43                       ;
+; Maximum fan-out                             ; 2983                       ;
+; Total fan-out                               ; 23384                      ;
+; Average fan-out                             ; 3.42                       ;
 +---------------------------------------------+----------------------------+
 
 
@@ -260,7 +264,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name      ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
-; |monociclo_fpga                           ; 3293 (0)            ; 3111 (0)                  ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |monociclo_fpga                                                                          ; monociclo_fpga   ; work         ;
+; |monociclo_fpga                           ; 3697 (0)            ; 3015 (0)                  ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |monociclo_fpga                                                                          ; monociclo_fpga   ; work         ;
 ;    |Disp7segs:Disp0|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|Disp7segs:Disp0                                                          ; Disp7segs        ; work         ;
 ;    |Disp7segs:Disp1|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|Disp7segs:Disp1                                                          ; Disp7segs        ; work         ;
 ;    |Disp7segs:Disp2|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|Disp7segs:Disp2                                                          ; Disp7segs        ; work         ;
@@ -270,88 +274,247 @@ refer to the applicable agreement for further details.
 ;    |Disp7segs:Disp6|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|Disp7segs:Disp6                                                          ; Disp7segs        ; work         ;
 ;    |Disp7segs:Disp7|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|Disp7segs:Disp7                                                          ; Disp7segs        ; work         ;
 ;    |divFreq:divisor|                      ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|divFreq:divisor                                                          ; divFreq          ; work         ;
-;    |monociclo:PC|                         ; 3181 (173)          ; 3078 (6)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC                                                             ; monociclo        ; work         ;
-;       |ALUNBits:comb_169|                 ; 108 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169                                           ; ALUNBits         ; work         ;
-;          |ALU:alubucle[0].ALUBit0|        ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0                   ; ALU              ; work         ;
+;    |monociclo:PC|                         ; 3585 (287)          ; 2982 (6)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC                                                             ; monociclo        ; work         ;
+;       |ALUNBits:comb_169|                 ; 448 (81)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169                                           ; ALUNBits         ; work         ;
+;          |ALU:alubucle[0].ALUBit0|        ; 10 (9)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0                   ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[10].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[10].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[10].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[11].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[11].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[11].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[12].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[12].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[12].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[13].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[13].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[13].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[14].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[14].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[14].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[15].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[15].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[15].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[16].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[16].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[16].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[17].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[17].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[17].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[18].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[18].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[18].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[19].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[19].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[19].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[1].ALUBitX|        ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[1].ALUBitX                   ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[1].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[20].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[20].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[20].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[21].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[21].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[21].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[22].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[22].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[22].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[23].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[23].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[23].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[24].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[24].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[24].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[25].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[25].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[25].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[26].ALUBitX|       ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[26].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[26].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[10].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[10].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[10].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[11].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[11].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[11].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[12].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[12].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[12].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[13].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[13].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[13].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[14].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[14].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[14].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[15].ALUBitX|       ; 6 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[15].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[15].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[16].ALUBitX|       ; 6 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[16].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[16].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[17].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[17].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[17].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[18].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[18].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[18].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[19].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[19].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[19].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[1].ALUBitX|        ; 7 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[1].ALUBitX                   ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[1].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
+;          |ALU:alubucle[20].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[20].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[20].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[21].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[21].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[21].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[22].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[22].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[22].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[23].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[23].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[23].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[24].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[24].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[24].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[25].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[25].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[25].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[26].ALUBitX|       ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[26].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[26].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
 ;          |ALU:alubucle[27].ALUBitX|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[27].ALUBitX                  ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[27].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
 ;          |ALU:alubucle[28].ALUBitX|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[28].ALUBitX                  ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[28].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
 ;          |ALU:alubucle[29].ALUBitX|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[29].ALUBitX                  ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[29].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[2].ALUBitX|        ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[2].ALUBitX                   ; ALU              ; work         ;
+;          |ALU:alubucle[2].ALUBitX|        ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[2].ALUBitX                   ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[2].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[30].ALUBitX|       ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[30].ALUBitX                  ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[30].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
-;          |ALU:alubucle[3].ALUBitX|        ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[3].ALUBitX                   ; ALU              ; work         ;
+;          |ALU:alubucle[30].ALUBitX|       ; 7 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[30].ALUBitX                  ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[30].ALUBitX|fulladder:fa1bit ; fulladder        ; work         ;
+;          |ALU:alubucle[3].ALUBitX|        ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[3].ALUBitX                   ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[3].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[4].ALUBitX|        ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[4].ALUBitX                   ; ALU              ; work         ;
+;          |ALU:alubucle[4].ALUBitX|        ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[4].ALUBitX                   ; ALU              ; work         ;
 ;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[4].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[5].ALUBitX|        ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[5].ALUBitX                   ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[5].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[6].ALUBitX|        ; 6 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[6].ALUBitX                   ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[6].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[7].ALUBitX|        ; 7 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[7].ALUBitX                   ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[7].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[8].ALUBitX|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[8].ALUBitX                   ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[8].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALU:alubucle[9].ALUBitX|        ; 3 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[9].ALUBitX                   ; ALU              ; work         ;
-;             |fulladder:fa1bit|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[9].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
-;          |ALUBitN:alubucle[31].ALUBitN_1| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALUBitN:alubucle[31].ALUBitN_1            ; ALUBitN          ; work         ;
-;       |dcache:memoria_mem|                ; 1418 (1418)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|dcache:memoria_mem                                          ; dcache           ; work         ;
-;       |decodificador:decode_u0|           ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|decodificador:decode_u0                                     ; decodificador    ; work         ;
-;       |extensiondesigno:extend_u3|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|extensiondesigno:extend_u3                                  ; extensiondesigno ; work         ;
-;       |icache:icache_u0|                  ; 82 (82)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|icache:icache_u0                                            ; icache           ; work         ;
-;       |regfile:registerFile_u0|           ; 1394 (1394)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|regfile:registerFile_u0                                     ; regfile          ; work         ;
+;          |ALU:alubucle[5].ALUBitX|        ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[5].ALUBitX                   ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[5].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
+;          |ALU:alubucle[6].ALUBitX|        ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[6].ALUBitX                   ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[6].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
+;          |ALU:alubucle[7].ALUBitX|        ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[7].ALUBitX                   ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[7].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
+;          |ALU:alubucle[8].ALUBitX|        ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[8].ALUBitX                   ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[8].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
+;          |ALU:alubucle[9].ALUBitX|        ; 4 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[9].ALUBitX                   ; ALU              ; work         ;
+;             |fulladder:fa1bit|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[9].ALUBitX|fulladder:fa1bit  ; fulladder        ; work         ;
+;          |ALUBitN:alubucle[31].ALUBitN_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALUBitN:alubucle[31].ALUBitN_1            ; ALUBitN          ; work         ;
+;          |shift:shift_u|                  ; 238 (238)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|shift:shift_u                             ; shift            ; work         ;
+;       |ALUcontrol:ALUcontrol_u|           ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|ALUcontrol:ALUcontrol_u                                     ; ALUcontrol       ; work         ;
+;       |dcache:memoria_mem|                ; 1424 (1424)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|dcache:memoria_mem                                          ; dcache           ; work         ;
+;       |decodificador:decode_u0|           ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|decodificador:decode_u0                                     ; decodificador    ; work         ;
+;       |extensiondesigno:extend_u3|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|extensiondesigno:extend_u3                                  ; extensiondesigno ; work         ;
+;       |icache:icache_u0|                  ; 79 (79)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|icache:icache_u0                                            ; icache           ; work         ;
+;       |regfile:registerFile_u0|           ; 1330 (1330)         ; 928 (928)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |monociclo_fpga|monociclo:PC|regfile:registerFile_u0                                     ; regfile          ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; monociclo:PC|pc_r[8..31]               ; Lost fanout        ;
-; Total Number of Removed Registers = 24 ;                    ;
-+----------------------------------------+--------------------+
++-----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                  ;
++-------------------------------------------------------+---------------------------------------------+
+; Register name                                         ; Reason for Removal                          ;
++-------------------------------------------------------+---------------------------------------------+
+; monociclo:PC|pc_r[8..31]                              ; Lost fanout                                 ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~831 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~830 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~829 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~828 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~827 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~826 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~825 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~824 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~823 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~822 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~821 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~820 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~819 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~818 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~817 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~816 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~815 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~814 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~813 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~812 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~811 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~810 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~809 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~808 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~807 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~806 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~805 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~801 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~800 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~804 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~803 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~802 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~799 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~798 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~797 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~796 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~795 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~794 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~793 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~792 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~791 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~790 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~789 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~788 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~787 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~786 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~785 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~784 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~783 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~782 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~781 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~780 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~779 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~778 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~777 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~776 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~775 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~774 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~773 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~769 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~768 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~772 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~771 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~770 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~703 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~702 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~701 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~700 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~699 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~698 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~697 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~696 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~695 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~694 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~693 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~692 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~691 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~690 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~689 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~688 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~687 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~686 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~685 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~684 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~683 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~682 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~681 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~680 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~679 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~678 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~677 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~673 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~672 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~676 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~675 ; Stuck at GND due to stuck port clock_enable ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~674 ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 120               ;                                             ;
++-------------------------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                     ;
++-------------------------------------------------------+--------------------------------+--------------------------------------------------------+
+; Register name                                         ; Reason for Removal             ; Registers Removed due to This Register                 ;
++-------------------------------------------------------+--------------------------------+--------------------------------------------------------+
+; monociclo:PC|regfile:registerFile_u0|registerfile~823 ; Stuck at GND                   ; monociclo:PC|regfile:registerFile_u0|registerfile~814, ;
+;                                                       ; due to stuck port clock_enable ; monociclo:PC|regfile:registerFile_u0|registerfile~813, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~812, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~810, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~809, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~808, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~800, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~796, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~790, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~782, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~781, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~780, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~778, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~777, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~776, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~769, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~768, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~700, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~694, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~689, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~686, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~685, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~684, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~682, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~681, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~680, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~673, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~672  ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~802 ; Stuck at GND                   ; monociclo:PC|regfile:registerFile_u0|registerfile~798, ;
+;                                                       ; due to stuck port clock_enable ; monociclo:PC|regfile:registerFile_u0|registerfile~797, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~795, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~794, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~792, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~791, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~789, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~787, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~786, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~702, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~701, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~699, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~698, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~696, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~695, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~693, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~691, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~690  ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~822 ; Stuck at GND                   ; monociclo:PC|regfile:registerFile_u0|registerfile~811, ;
+;                                                       ; due to stuck port clock_enable ; monociclo:PC|regfile:registerFile_u0|registerfile~779, ;
+;                                                       ;                                ; monociclo:PC|regfile:registerFile_u0|registerfile~683  ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~771 ; Stuck at GND                   ; monociclo:PC|regfile:registerFile_u0|registerfile~703, ;
+;                                                       ; due to stuck port clock_enable ; monociclo:PC|regfile:registerFile_u0|registerfile~687  ;
+; monociclo:PC|regfile:registerFile_u0|registerfile~772 ; Stuck at GND                   ; monociclo:PC|regfile:registerFile_u0|registerfile~692  ;
+;                                                       ; due to stuck port clock_enable ;                                                        ;
++-------------------------------------------------------+--------------------------------+--------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -359,12 +522,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3111  ;
+; Total registers                              ; 3015  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 39    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3072  ;
+; Number of registers using Clock Enable       ; 2976  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -374,20 +537,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; divFreq:divisor|divF_clk_o             ; 3079    ;
+; divFreq:divisor|divF_clk_o             ; 2983    ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|ALU:alubucle[3].ALUBitX|Mux0 ;
-; 9:1                ; 24 bits   ; 144 LEs       ; 96 LEs               ; 48 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|wb_resultado_o[29]                             ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 16 LEs               ; 72 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|muxalu_dato_o[4]                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; 32:1               ; 2 bits    ; 42 LEs        ; 6 LEs                ; 36 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|ALUcontrol:ALUcontrol_u|Selector1 ;
+; 33:1               ; 5 bits    ; 110 LEs       ; 20 LEs               ; 90 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|muxalu_dato_o[0]                  ;
+; 39:1               ; 2 bits    ; 52 LEs        ; 16 LEs               ; 36 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|ALUcontrol:ALUcontrol_u|Selector3 ;
+; 20:1               ; 7 bits    ; 91 LEs        ; 56 LEs               ; 35 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|wb_resultado_o[20]                ;
+; 19:1               ; 7 bits    ; 84 LEs        ; 56 LEs               ; 28 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|wb_resultado_o[13]                ;
+; 19:1               ; 4 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|salida_o[4]     ;
+; 21:1               ; 4 bits    ; 56 LEs        ; 36 LEs               ; 20 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|wb_resultado_o[25]                ;
+; 20:1               ; 2 bits    ; 26 LEs        ; 18 LEs               ; 8 LEs                  ; No         ; |monociclo_fpga|monociclo:PC|ALUNBits:comb_169|salida_o[2]     ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 18 LEs               ; 10 LEs                 ; No         ; |monociclo_fpga|monociclo:PC|wb_resultado_o[28]                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------+
@@ -407,6 +576,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------+
 ; N              ; 32    ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: monociclo:PC|ALUNBits:comb_169|shift:shift_u ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -739,21 +918,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 58                          ;
-; cycloneiii_ff         ; 3111                        ;
+; cycloneiii_ff         ; 3015                        ;
 ;     CLR               ; 39                          ;
-;     ENA               ; 3072                        ;
-; cycloneiii_lcell_comb ; 3301                        ;
+;     ENA               ; 2976                        ;
+; cycloneiii_lcell_comb ; 3705                        ;
 ;     arith             ; 35                          ;
 ;         2 data inputs ; 34                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 3266                        ;
+;     normal            ; 3670                        ;
 ;         1 data inputs ; 11                          ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 131                         ;
-;         4 data inputs ; 3115                        ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 447                         ;
+;         4 data inputs ; 3193                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 44.00                       ;
-; Average LUT depth     ; 19.81                       ;
+; Average LUT depth     ; 21.43                       ;
 +-----------------------+-----------------------------+
 
 
@@ -762,7 +941,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:14     ;
+; Top            ; 00:00:33     ;
 +----------------+--------------+
 
 
@@ -772,43 +951,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 17 06:48:52 2024
+    Info: Processing started: Thu May 23 13:36:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off monociclo_fpga -c monociclo_fpga
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file decodificador/decodificador.v
-    Info (12023): Found entity 1: decodificador File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/decodificador/decodificador.v Line: 14
+    Info (12023): Found entity 1: decodificador File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/decodificador/decodificador.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file extensiondesigno/extensiondesigno.v
     Info (12023): Found entity 1: extensiondesigno File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/extensiondesigno/extensiondesigno.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file alu/shift.v
-    Info (12023): Found entity 1: shift File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/shift.v Line: 1
+    Info (12023): Found entity 1: shift File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/shift.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALU.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file alu/fulladder/fulladder.v
-    Info (12023): Found entity 1: fulladder File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/fulladder/fulladder.v Line: 6
+    Info (12023): Found entity 1: fulladder File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/fulladder/fulladder.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alunbits.v
-    Info (12023): Found entity 1: ALUNBits File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 4
+    Info (12023): Found entity 1: ALUNBits File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alubitn.v
-    Info (12023): Found entity 1: ALUBitN File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUBitN.v Line: 1
+    Info (12023): Found entity 1: ALUBitN File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUBitN.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file monociclo/monociclo.v
-    Info (12023): Found entity 1: monociclo File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 16
+    Info (12023): Found entity 1: monociclo File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file disp7segs.v
-    Info (12023): Found entity 1: Disp7segs File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/Disp7segs.v Line: 1
+    Info (12023): Found entity 1: Disp7segs File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/Disp7segs.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file monociclo_fpga.v
-    Info (12023): Found entity 1: monociclo_fpga File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 16
+    Info (12023): Found entity 1: monociclo_fpga File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file divfreq.v
     Info (12023): Found entity 1: divFreq File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/divFreq.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file icache/icache.v
     Info (12023): Found entity 1: icache File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/icache/icache.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file regfile/regfile.v
-    Info (12023): Found entity 1: regfile File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/regfile/regfile.v Line: 2
+    Info (12023): Found entity 1: regfile File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/regfile/regfile.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file dcache/dcache.v
-    Info (12023): Found entity 1: dcache File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/dcache/dcache.v Line: 16
+    Info (12023): Found entity 1: dcache File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/dcache/dcache.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file alucontrol/alucontrol.v
+    Info (12023): Found entity 1: ALUcontrol File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALUcontrol/ALUcontrol.v Line: 16
 Warning (10236): Verilog HDL Implicit Net warning at monociclo.v(83): created implicit net for "id_regwrite_o" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 83
 Warning (10236): Verilog HDL Implicit Net warning at monociclo.v(84): created implicit net for "id_alusrc_o" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 84
-Critical Warning (10846): Verilog HDL Instantiation warning at monociclo.v(134): instance has no name File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 134
+Critical Warning (10846): Verilog HDL Instantiation warning at monociclo.v(141): instance has no name File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 141
 Info (12127): Elaborating entity "monociclo_fpga" for the top level hierarchy
-Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:PC" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 41
+Info (12128): Elaborating entity "monociclo" for hierarchy "monociclo:PC" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 40
 Info (12128): Elaborating entity "icache" for hierarchy "monociclo:PC|icache:icache_u0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 74
 Warning (10850): Verilog HDL warning at icache.v(27): number of words (39) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/icache/icache.v Line: 27
 Warning (10030): Net "memoria.data_a" at icache.v(21) has no driver or initial value, using a default initial value '0' File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/icache/icache.v Line: 21
@@ -817,16 +998,18 @@ Warning (10030): Net "memoria.we_a" at icache.v(21) has no driver or initial val
 Info (12128): Elaborating entity "decodificador" for hierarchy "monociclo:PC|decodificador:decode_u0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 88
 Info (12128): Elaborating entity "regfile" for hierarchy "monociclo:PC|regfile:registerFile_u0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 101
 Info (12128): Elaborating entity "extensiondesigno" for hierarchy "monociclo:PC|extensiondesigno:extend_u3" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 111
-Info (12128): Elaborating entity "ALUNBits" for hierarchy "monociclo:PC|ALUNBits:comb_169" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 134
-Info (12128): Elaborating entity "ALU" for hierarchy "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 47
-Info (12128): Elaborating entity "fulladder" for hierarchy "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0|fulladder:fa1bit" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALU.v Line: 33
-Info (12128): Elaborating entity "ALUBitN" for hierarchy "monociclo:PC|ALUNBits:comb_169|ALUBitN:alubucle[31].ALUBitN_1" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 61
-Info (12128): Elaborating entity "dcache" for hierarchy "monociclo:PC|dcache:memoria_mem" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 148
-Info (12128): Elaborating entity "divFreq" for hierarchy "divFreq:divisor" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 49
-Info (12128): Elaborating entity "Disp7segs" for hierarchy "Disp7segs:Disp0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 60
+Info (12128): Elaborating entity "ALUcontrol" for hierarchy "monociclo:PC|ALUcontrol:ALUcontrol_u" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 118
+Info (12128): Elaborating entity "ALUNBits" for hierarchy "monociclo:PC|ALUNBits:comb_169" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 141
+Info (12128): Elaborating entity "ALU" for hierarchy "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 59
+Info (12128): Elaborating entity "fulladder" for hierarchy "monociclo:PC|ALUNBits:comb_169|ALU:alubucle[0].ALUBit0|fulladder:fa1bit" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALU.v Line: 47
+Info (12128): Elaborating entity "ALUBitN" for hierarchy "monociclo:PC|ALUNBits:comb_169|ALUBitN:alubucle[31].ALUBitN_1" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 73
+Info (12128): Elaborating entity "shift" for hierarchy "monociclo:PC|ALUNBits:comb_169|shift:shift_u" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/ALU/ALUNBits.v Line: 105
+Info (12128): Elaborating entity "dcache" for hierarchy "monociclo:PC|dcache:memoria_mem" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo/monociclo.v Line: 155
+Info (12128): Elaborating entity "divFreq" for hierarchy "divFreq:divisor" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 48
+Info (12128): Elaborating entity "Disp7segs" for hierarchy "Disp7segs:Disp0" File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/monociclo_fpga.v Line: 59
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "monociclo:PC|regfile:registerFile_u0|registerfile" is uninferred due to asynchronous read logic File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/regfile/regfile.v Line: 15
-    Info (276007): RAM logic "monociclo:PC|dcache:memoria_mem|memoria" is uninferred due to asynchronous read logic File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/dcache/dcache.v Line: 26
+    Info (276007): RAM logic "monociclo:PC|regfile:registerFile_u0|registerfile" is uninferred due to asynchronous read logic File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/regfile/regfile.v Line: 27
+    Info (276007): RAM logic "monociclo:PC|dcache:memoria_mem|memoria" is uninferred due to asynchronous read logic File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/dcache/dcache.v Line: 25
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/db/monociclo_fpga.ram0_icache_ff572994.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (13000): Registers with preset signals will power-up high File: C:/Users/Xehcl/OneDrive/Documentos/Arquitectura de computadoras/monociclo_fpga/divFreq.v Line: 20
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -834,14 +1017,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 24 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6423 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6731 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 6365 logic cells
+    Info (21061): Implemented 6673 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Fri May 17 06:49:22 2024
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Thu May 23 13:37:44 2024
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:01:05
 
 
