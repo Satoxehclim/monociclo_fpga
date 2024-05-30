@@ -1,14 +1,15 @@
 /*
-	Grupo:5CV3
-	Proyecto:    monociclo_FPGA
-	Archivo:divFreq.v
-	Equipo:Equipo 3
-	Integrantes:Abraham Roman Ramírez
-					Andrade Jiménez Jonathan 
-					Brenda Vergara Martínez
-					Kaleb Yael De La Rosa Gutiérrez
-					Osmar Alejandro Garcia Jiménez
-	Descripcion:Esta es el divisor de frecuenca para que el PC tenga un reloj de entrada de 1 segundo
+	Grupo:			5CV3
+	Proyecto:   	monociclo_FPGA
+	Archivo:			divFreq.v
+	Equipo:			Equipo 3
+	Integrantes:	Abraham Roman Ramírez
+						Andrade Jiménez Jonathan 
+						Brenda Vergara Martínez
+						Kaleb Yael De La Rosa Gutiérrez
+						Osmar Alejandro Garcia Jiménez
+	Descripcion:	Esta es el divisor de frecuenca para que el PC 
+						tenga un reloj de entrada de 1 segundo
 						
 */
 module divFreq (

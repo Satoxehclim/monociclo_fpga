@@ -1,16 +1,16 @@
 /*
-	Grupo:5CV3
-	Proyecto:monociclo_FPGA
-	Archivo:extensiondesigno.v
-	Equipo:Equipo 3
-	Integrantes:Abraham Roman Ramírez
-					Andrade Jiménez Jonathan 
-					Brenda Vergara Martínez
-					Kaleb Yael De La Rosa Gutiérrez
-					Osmar Alejandro Garcia Jiménez
-	Descripcion: Este archivo hace una instancia de la ALU de 10 operraciones a 32 bits
-					 e instancia el modulo shift comparando tambien el bit 3 para saber si es un shift
-					 o es la salida de la ALU
+	Grupo:			5CV3
+	Proyecto:   	monociclo_FPGA
+	Archivo:			ALUNBits.v
+	Equipo:			Equipo 3
+	Integrantes:	Abraham Roman Ramírez
+						Andrade Jiménez Jonathan 
+						Brenda Vergara Martínez
+						Kaleb Yael De La Rosa Gutiérrez
+						Osmar Alejandro Garcia Jiménez
+	Descripcion: 	Este archivo hace una instancia de la ALU de 10 operraciones a 32 bits
+						e instancia el modulo shift comparando tambien el bit 3 para saber si es un shift
+						o es la salida de la ALU
 						
 */
 module ALUNBits #(

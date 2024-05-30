@@ -1,13 +1,14 @@
 /*
-	Grupo:5CV3
-	Proyecto:    monociclo_FPGA
-	Archivo:monociclo.v
-	Equipo:Equipo 3
-	Integrantes:Abraham Roman Ramírez
-					Andrade Jiménez Jonathan 
-					Brenda Vergara Martínez
-					Kaleb Yael De La Rosa Gutiérrez
-					Osmar Alejandro Garcia Jiménez
+	Grupo:			5CV3
+	Proyecto:   	monociclo_FPGA
+	Archivo:			monociclo.v
+	Equipo:			Equipo 3
+	Integrantes:	Abraham Roman Ramírez
+						Andrade Jiménez Jonathan 
+						Brenda Vergara Martínez
+						Kaleb Yael De La Rosa Gutiérrez
+						Osmar Alejandro Garcia Jiménez
+
 	Descripcion:Este archivo es la instancia de un procesador monociclo
 						
 */
@@ -35,6 +36,11 @@ module monociclo(
 	 wire [31:0] wb_resultado_o;
 	 wire 		 id_memtoreg_o;
 	 wire [3:0]  aluc_operacion_o;
+	 wire [31:0] sll_dato_o;
+	 wire [31:0] branch_pc_w;
+	 wire 		 pcsrc_w;
+	 wire [31:0] pcBranchNext_w;
+	 wire 		 ex_zeroflag_o;
 	 
 	 
     //Seccion de asignacion de señales
@@ -60,7 +66,7 @@ module monociclo(
         if (!rst_ni)
             pc_r <= 32'b0;
         else
-            pc_r <= pcnext_w;
+            pc_r <= pcBranchNext_w;
     
     end
     
@@ -84,7 +90,8 @@ module monociclo(
 		.alusrc_o		(id_alusrc_o),
 		.memwrite_o  	(id_memwrite_o),
 		.memread_o   	(id_memread_o),
-		.memtoreg_o		(id_memtoreg_o)
+		.memtoreg_o		(id_memtoreg_o),
+		.branch_o		(id_branch_o)
 	);
 	
 	//Instancia del banco de registros
@@ -115,11 +122,17 @@ module monociclo(
 		.func3_i				(if_inst_o[14:12]),
 		.func7_i				(if_inst_o[30]),
 		.ALUoperation_o	(aluc_operacion_o)
+		
 	);
 	
 	///multiplexor para el segundo operando de la ALU 
 	assign muxalu_dato_o  = (id_alusrc_o) ? es_dato_o : rf_dators2_o;
 	
+	//sll de 1 bit
+	sll1bit sll_u1(
+		.entrada_i	(es_dato_o),
+		.salida_o	(sll_dato_o)
+);
 	
 	//instancia de ALU de 32 bits
 	ALUNBits #(
@@ -139,6 +152,19 @@ module monociclo(
 		.setunsigned_o		()
 	
 	);
+	
+	//detector de tipo de branch
+	flagDetector(
+		.branch_i		(id_branch_o),
+		.func3_i			(if_inst_o[14:12]),
+		.salida_i		(ex_resultado_o),
+		.branchFlag_o	(ex_zeroflag_o)
+	);
+	
+	//sumador para calcular el pc de salto
+	assign branch_pc_w = sll_dato_o + pc_r;
+	assign pcsrc_w = id_branch_o & ex_zeroflag_o;
+	assign pcBranchNext_w = (pcsrc_w) ? branch_pc_w : pcnext_w;
 	
 	/////////////////////
 	//**MEMORY ACCESS**//

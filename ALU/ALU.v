@@ -1,15 +1,15 @@
 /*
-	Grupo:5CV3
-	Proyecto:    monociclo_FPGA
-	Archivo:extensiondesigno.v
-	Equipo:Equipo 3
-	Integrantes:Abraham Roman Ramírez
-					Andrade Jiménez Jonathan 
-					Brenda Vergara Martínez
-					Kaleb Yael De La Rosa Gutiérrez
-					Osmar Alejandro Garcia Jiménez
-	Descripcion: Este archivo es el desarrollo de una ALU de 7 operaciones instanciando 
-	un sumador para la operacion suma y resta
+	Grupo:			5CV3
+	Proyecto:   	monociclo_FPGA
+	Archivo:			ALU.v
+	Equipo:			Equipo 3
+	Integrantes:	Abraham Roman Ramírez
+						Andrade Jiménez Jonathan 
+						Brenda Vergara Martínez
+						Kaleb Yael De La Rosa Gutiérrez
+						Osmar Alejandro Garcia Jiménez
+	Descripcion: 	Este archivo es el desarrollo de una ALU de 7 operaciones instanciando 
+						un sumador para la operacion suma y resta
 						
 */
 module ALU (

@@ -1,15 +1,15 @@
 /*
-	Grupo:5CV3
-	Proyecto:    monociclo_FPGA
-	Archivo:extensiondesigno.v
-	Equipo:Equipo 3
-	Integrantes:Abraham Roman Ramírez
-					Andrade Jiménez Jonathan 
-					Brenda Vergara Martínez
-					Kaleb Yael De La Rosa Gutiérrez
-					Osmar Alejandro Garcia Jiménez
-	Descripcion: Este archivo implementa una salida para los codigos para los display
-					 para que aparezca la salida en hexadecimal
+	Grupo:			5CV3
+	Proyecto:   	monociclo_FPGA
+	Archivo:			Disp7segs.v
+	Equipo:			Equipo 3
+	Integrantes:	Abraham Roman Ramírez
+						Andrade Jiménez Jonathan 
+						Brenda Vergara Martínez
+						Kaleb Yael De La Rosa Gutiérrez
+						Osmar Alejandro Garcia Jiménez
+	Descripcion: 	Este archivo implementa una salida para los codigos para los display
+						para que aparezca la salida en hexadecimal
 						
 */
 module Disp7segs (
