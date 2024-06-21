@@ -14,25 +14,27 @@
 						
 */
 module ALUNBits #(
-	parameter 			N = 32
+	parameter 			N = 4
 )
 (
-	input				[N-1:0]	a_i,
-	input 			[N-1:0]	b_i,
-	input 						c_i,
-	input 						invert_i,
-	input 						less_i,
-	input 						lessunsigned_i,
-	input 			[3:0] 	operacion_i,
+	input				[N-1:0]		a_i,
+	input 			[N-1:0]		b_i,
+	input 							c_i,
+	input 							invert_i,
+	input 			[3:0] 		operacion_i,
+
+	
 	output		   reg[N-1:0] 	salida_o,
-	output						c_o,
-	output						set_o,
-	output						setunsigned_o
+	output							c_o
+	
 
 );
 	wire 				[N:0] 	carries_w;
-	wire				[31:0] 	salida_shift;
+	wire				[N-1:0] 	salida_shift;
 	wire				[N-1:0] 	salida_alu;
+	
+	wire							set_o;
+	wire							setunsigned_o;
 	
 	
 	assign 				carries_w[0] = c_i;
@@ -63,13 +65,13 @@ module ALUNBits #(
 					.b_i				(b_i[i]),
 					.c_i				(carries_w[i]),
 					.invert_i		(invert_i),
-					.less_i			(1'b0),
-					.lessunsigned_i(1'b0),
+					.less_i			(),
+					.lessunsigned_i(),
 					.operacion_i	(operacion_i[2:0]),
 					.salida_o		(salida_alu[i]),
 					.c_o				(carries_w[i+1]),
 					.set_o			(set_o),
-					.setunsigned_o(setunsigned_o)
+					.setunsigned_o (setunsigned_o)
 					);
 				default:
 					ALU ALUBitX(
@@ -94,7 +96,7 @@ module ALUNBits #(
 
 	// Instancia del módulo shift
 	shift #(
-		.N				(32)
+		.N				(N)
 		) 
 		shift_u
 		(

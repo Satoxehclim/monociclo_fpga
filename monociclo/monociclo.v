@@ -41,6 +41,8 @@ module monociclo(
 	 wire 		 pcsrc_w;
 	 wire [31:0] pcBranchNext_w;
 	 wire 		 ex_zeroflag_o;
+	 wire			 c_i_ALUControl;
+	 wire			 invert_i_ALUControl;
 	 
 	 
     //Seccion de asignacion de señales
@@ -121,8 +123,9 @@ module monociclo(
 		.opcode_i			(if_inst_o[6:0]),
 		.func3_i				(if_inst_o[14:12]),
 		.func7_i				(if_inst_o[30]),
-		.ALUoperation_o	(aluc_operacion_o)
-		
+		.ALUoperation_o	(aluc_operacion_o),
+		.c_o					(c_i_ALUControl),
+		.invert_o			(invert_i_ALUControl)
 	);
 	
 	///multiplexor para el segundo operando de la ALU 
@@ -141,8 +144,8 @@ module monociclo(
 	(
 		.a_i					(rf_dators1_o),
 		.b_i					(muxalu_dato_o),
-		.c_i					(if_inst_o[30]),//if_inst_o funct 7
-		.invert_i			(if_inst_o[30]),
+		.c_i					(c_i_ALUControl),//if_inst_o funct 7
+		.invert_i			(invert_i_ALUControl),
 		.less_i				(),
 		.lessunsigned_i	(),
 		.operacion_i		(aluc_operacion_o),

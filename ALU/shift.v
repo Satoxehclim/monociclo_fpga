@@ -11,7 +11,7 @@
 	Descripcion: 	Este archivo implementa las opercaiones shift
 						
 */
-module shift #(parameter N = 32)(
+module shift #(parameter N = 16)(
     input [N-1:0] a_i,       		// Entrada A de N bits
     input [N-1:0] b_i,       		// Entrada B de N bits (cantidad de desplazamiento)
     input [1:0] operacion_i,     // Código de operación de 2 bits para el tipo de desplazamiento
