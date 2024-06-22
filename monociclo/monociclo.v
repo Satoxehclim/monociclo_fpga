@@ -43,6 +43,8 @@ module monociclo(
 	 wire 		 ex_zeroflag_o;
 	 wire			 c_i_ALUControl;
 	 wire			 invert_i_ALUControl;
+	 wire			 jFlag_w;
+	 wire [31:0] wb_selectorJal_o;
 	 
 	 
     //Seccion de asignacion de señales
@@ -93,7 +95,8 @@ module monociclo(
 		.memwrite_o  	(id_memwrite_o),
 		.memread_o   	(id_memread_o),
 		.memtoreg_o		(id_memtoreg_o),
-		.branch_o		(id_branch_o)
+		.branch_o		(id_branch_o),
+		.jalFlag_o		(jFlag_w)
 	);
 	
 	//Instancia del banco de registros
@@ -101,7 +104,7 @@ module monociclo(
 	regfile registerFile_u0(
 	.rs1_i		(if_inst_o[19:15]),
 	.rs2_i		(if_inst_o[24:20]),
-   .datord_i	(wb_resultado_o),
+   .datord_i	(wb_selectorJal_o),
 	.rd_i			(if_inst_o[11:7]),
    .we_i			(id_regwrite_o),
    .clk_i		(clk_i),
@@ -166,7 +169,7 @@ module monociclo(
 	
 	//sumador para calcular el pc de salto
 	assign branch_pc_w = sll_dato_o + pc_r;
-	assign pcsrc_w = id_branch_o & ex_zeroflag_o;
+	assign pcsrc_w = (id_branch_o & ex_zeroflag_o)|jFlag_w;
 	assign pcBranchNext_w = (pcsrc_w) ? branch_pc_w : pcnext_w;
 	
 	/////////////////////
@@ -189,6 +192,8 @@ module monociclo(
 	
 	///multiplexor para seleccion de datos de la ALU o de memoria
 	assign wb_resultado_o  = (id_memtoreg_o) ? mem_dato_o : ex_resultado_o;
+	//multiplexor para seleccion de dato a insertar en banco de registros
+	assign wb_selectorJal_o = (jFlag_w) ? pcnext_w : wb_resultado_o;
 
 endmodule
 

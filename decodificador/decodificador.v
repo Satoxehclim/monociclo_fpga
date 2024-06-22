@@ -19,7 +19,8 @@ module decodificador( //etapa de control
   output 	reg   	memwrite_o,
   output 	reg   	memread_o,
   output		reg		memtoreg_o,
-  output		reg		branch_o
+  output		reg		branch_o,
+  output		reg		jalFlag_o
 );
 
 	//wire  [6:0]  opcode_w;
@@ -36,6 +37,7 @@ module decodificador( //etapa de control
 					memread_o   =  1'b0;
 					memtoreg_o  =  1'b0;
 					branch_o		=	1'b0;
+					jalFlag_o	=	1'b0;
 				end
 			7'b0110011:     //tipo R
 				begin 
@@ -45,6 +47,7 @@ module decodificador( //etapa de control
 					memread_o   =  1'b0;
 					memtoreg_o  =  1'b0;
 					branch_o		=	1'b0;
+					jalFlag_o	=	1'b0;
 				end	
 			7'b0100011:     //tipo S
 				begin 
@@ -54,6 +57,7 @@ module decodificador( //etapa de control
 					memread_o   =  1'b0;
 					memtoreg_o  =  1'b0;
 					branch_o		=	1'b0;
+					jalFlag_o	=	1'b0;
 				end	
 			7'b0000011:     //tipo Load
 				begin 
@@ -63,6 +67,7 @@ module decodificador( //etapa de control
 					memread_o   =  1'b1;
 					memtoreg_o  =  1'b1;
 					branch_o		=	1'b0;
+					jalFlag_o	=	1'b0;
 				end
 			7'b1100011:     //tipo branch
 				begin 
@@ -72,6 +77,17 @@ module decodificador( //etapa de control
 					memread_o   =  1'b0;
 					memtoreg_o  =  1'b0;
 					branch_o		=	1'b1;
+					jalFlag_o	=	1'b0;
+				end
+			7'b1101111:     //tipo JAL
+				begin 
+					regwrite_o	=	1'b0;
+					alusrc_o 	=  1'b0;
+					memwrite_o  =  1'b0;
+					memread_o   =  1'b0;
+					memtoreg_o  =  1'b0;
+					branch_o		=	1'b0;
+					jalFlag_o	=	1'b1;
 				end
 			default:   //instruccion no soportada  
 				begin 
@@ -81,6 +97,7 @@ module decodificador( //etapa de control
 					memread_o   =  1'b0;
 				   memtoreg_o  =  1'b0;	
 					branch_o		=	1'b0;
+					jalFlag_o	=	1'b0;
 				end
 		endcase 
 	end
