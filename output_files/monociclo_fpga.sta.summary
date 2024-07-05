@@ -3,19 +3,19 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'monociclo:PC|pc_r[2]'
-Slack : -25.127
-TNS   : -25.127
+Slack : -24.219
+TNS   : -24.219
 
 Type  : Slow 1200mV 85C Model Setup 'divFreq:divisor|divF_clk_o'
-Slack : -23.817
-TNS   : -58110.654
+Slack : -23.388
+TNS   : -58357.656
 
 Type  : Slow 1200mV 85C Model Setup 'clk_i'
-Slack : -4.062
-TNS   : -69.773
+Slack : -4.054
+TNS   : -73.316
 
 Type  : Slow 1200mV 85C Model Hold 'divFreq:divisor|divF_clk_o'
-Slack : 0.405
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk_i'
@@ -23,7 +23,7 @@ Slack : 0.654
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'monociclo:PC|pc_r[2]'
-Slack : 1.175
+Slack : 1.947
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_i'
@@ -32,26 +32,26 @@ TNS   : -45.405
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divFreq:divisor|divF_clk_o'
 Slack : -1.285
-TNS   : -3956.515
+TNS   : -3987.355
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'monociclo:PC|pc_r[2]'
-Slack : 0.415
+Slack : 0.414
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'monociclo:PC|pc_r[2]'
-Slack : -23.121
-TNS   : -23.121
+Slack : -22.267
+TNS   : -22.267
 
 Type  : Slow 1200mV 0C Model Setup 'divFreq:divisor|divF_clk_o'
-Slack : -22.051
-TNS   : -53631.579
+Slack : -21.560
+TNS   : -53528.900
 
 Type  : Slow 1200mV 0C Model Setup 'clk_i'
-Slack : -3.669
-TNS   : -59.434
+Slack : -3.666
+TNS   : -62.904
 
 Type  : Slow 1200mV 0C Model Hold 'divFreq:divisor|divF_clk_o'
-Slack : 0.354
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk_i'
@@ -59,7 +59,7 @@ Slack : 0.598
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'monociclo:PC|pc_r[2]'
-Slack : 1.060
+Slack : 1.861
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_i'
@@ -68,26 +68,26 @@ TNS   : -45.405
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divFreq:divisor|divF_clk_o'
 Slack : -1.285
-TNS   : -3956.515
+TNS   : -3987.355
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'monociclo:PC|pc_r[2]'
-Slack : 0.307
+Slack : 0.316
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'monociclo:PC|pc_r[2]'
-Slack : -12.410
-TNS   : -12.410
+Slack : -11.455
+TNS   : -11.455
 
 Type  : Fast 1200mV 0C Model Setup 'divFreq:divisor|divF_clk_o'
-Slack : -11.310
-TNS   : -28107.284
+Slack : -11.148
+TNS   : -27678.726
 
 Type  : Fast 1200mV 0C Model Setup 'clk_i'
-Slack : -1.556
-TNS   : -18.241
+Slack : -1.595
+TNS   : -19.880
 
 Type  : Fast 1200mV 0C Model Hold 'divFreq:divisor|divF_clk_o'
-Slack : 0.180
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk_i'
@@ -95,19 +95,19 @@ Slack : 0.299
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'monociclo:PC|pc_r[2]'
-Slack : 0.522
+Slack : 0.855
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_i'
 Slack : -3.000
-TNS   : -38.035
+TNS   : -38.033
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divFreq:divisor|divF_clk_o'
 Slack : -1.000
-TNS   : -3079.000
+TNS   : -3103.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'monociclo:PC|pc_r[2]'
-Slack : 0.292
+Slack : 0.384
 TNS   : 0.000
 
 ------------------------------------------------------------

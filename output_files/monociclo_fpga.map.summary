@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Jun 21 18:24:10 2024
+Analysis & Synthesis Status : Successful - Fri Jun 28 00:48:01 2024
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : monociclo_fpga
 Top-level Entity Name : monociclo_fpga
 Family : Cyclone IV E
-Total logic elements : 6,752
-    Total combinational functions : 3,744
+Total logic elements : 6,911
+    Total combinational functions : 3,903
     Dedicated logic registers : 3,136
 Total registers : 3136
 Total pins : 58
